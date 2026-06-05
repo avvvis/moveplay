@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import os
 from pathlib import Path
 
@@ -8,10 +8,6 @@ try:
 except ImportError:
     pass
 
-=======
-from pathlib import Path
-
->>>>>>> 571e4a36f08214a125d57f3e891c82b1b60acb2c
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = PROJECT_ROOT / "data"
 RAW_DATA_DIR = DATA_DIR / "raw"
@@ -45,21 +41,13 @@ CLASS_NAMES = ["walking", "running", "gym"]
 
 TRAIN_SUBJECTS = [1, 2, 3, 4, 5, 6, 7]
 TEST_SUBJECTS = [8, 9, 10]
-<<<<<<< HEAD
 
-# ---------------------------------------------------------------------------
-# Spotify credentials — set these in your .env file (see .env.example)
-# ---------------------------------------------------------------------------
 SPOTIFY_CLIENT_ID     = os.getenv("SPOTIFY_CLIENT_ID", "")
 SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET", "")
 SPOTIFY_REDIRECT_URI  = os.getenv("SPOTIFY_REDIRECT_URI", "http://localhost:8888/callback")
 
-# Map each activity class to a Spotify playlist URI.
-# Right-click a playlist in Spotify → Share → Copy Spotify URI
 ACTIVITY_PLAYLISTS = {
     "walking": os.getenv("PLAYLIST_WALKING", ""),
     "running": os.getenv("PLAYLIST_RUNNING", ""),
     "gym":     os.getenv("PLAYLIST_GYM",     ""),
 }
-=======
->>>>>>> 571e4a36f08214a125d57f3e891c82b1b60acb2c
