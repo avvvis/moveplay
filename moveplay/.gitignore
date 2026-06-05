@@ -11,5 +11,8 @@ data/processed/*
 models/*.joblib
 results/*.json
 results/*.png
+<<<<<<< HEAD
 .env
 .cache
+=======
+>>>>>>> 571e4a36f08214a125d57f3e891c82b1b60acb2c
